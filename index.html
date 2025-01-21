@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script src="app.js">
+
+</script>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./Images/logo-dumy.webp" alt="logo">
+        </div>
+        <div class="nav-link">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Page/about.html">About</a></li>
+                    <li><a href="Courses Page/course.html">Courses</a></li>
+                    <li><a href="Contact Page/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sign-btn">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</button>
+            <span>or</span>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+        </div>
+    </header>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/Home Page/home-log.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                <div>
+                    <label for="uname"><b>Username</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+
+                    <label for="psw"><b>Password</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
+                        <i class="fa fa-eye toggle-password" onclick="togglePassword('login-password')"></i>
+                    </div>
+
+                    <p class="psw" onclick="document.getElementById('forget').style.display='block'"
+                        style="width:auto;"><a href="#">Forgot password?</a></p>
+                </div>
+                <div>
+                    <label class="flex-log">
+                    <div></div>
+                    <button class="log" type="submit">Log In</button>
+                </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="forget" class="modal">
+        <form class="modal-content animate" method="get">
+            <div class="container">
+                <div class="cont-head">
+                    <h2>Reset Password</h2>
+                </div>
+                <div>
+                    <label for="psw"><b>Password</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input type="password" placeholder="Enter Password" name="psw" id="forget-password" required>
+                        <i class="fa fa-eye toggle-password" onclick="togglePassword('forget-password')"></i>
+                    </div>
+
+                    <label for="psw"><b>Confirm Password</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input type="password" placeholder="Enter Confirm Password" name="psw" id="for-confirm-password"
+                            required>
+                        <i class="fa fa-eye toggle-password" onclick="togglePassword('for-confirm-password')"></i>
+                    </div>
+                </div>
+                <div>
+                    <label class="flex-log">
+                        <div></div>
+                        <button class="log" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">next</button>
+
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/Home Page/home-log.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                <div>
+                    <label for="uname"><b>Username</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+
+                    <label for="email"><b>Email</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" placeholder="Enter Email" name="email" required>
+                    </div>
+
+                    <label for="psw"><b>Password</b></label>
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input type="password" placeholder="Enter Password" name="psw" id="signup-password" required>
+                        <i class="fa fa-eye toggle-password" onclick="togglePassword('signup-password')"></i>
+                    </div>
+                </div>
+                <div>
+                    <label class="flex-log">
+                        <div> By creating an account you agree to our <a href="">Terms & Privacy</a>.</div>
+                        <button class="sign" type="submit">Sign Up</button>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <main>
+        <!-- First section -->
+        <section class="sec-1">
+            <div class="sec-1-content">
+                <h2>Welcome to Our Web Development Courses</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, similique ratione. Amet cupiditate,
+                    praesentium quod quas, iure, aliquam minus aspernatur ipsum vero doloremque nihil aliquid animi
+                    porro atque qui autem aperiam! Tenetur totam quod illo tempora necessitatibus dolor excepturi,
+                    quidem optio, quam veniam minima placeat veritatis, natus repellendus! Deleniti, sit?</p>
+                <button class="btn">Explore Courses</button>
+            </div>
+            <div class="sec-1-image">
+                <img src="./Images/side-pic-1.jpg" alt="hero image">
+            </div>
+        </section>
+
+        <!-- second section  -->
+        <section class="sec-2">
+            <div class="sec-2-content">
+                <div class="sec-2-content-left">
+                    <img src="./Images/side-pic-3.jpg" alt="side pic">
+                </div>
+                <div class="sec-2-content-right">
+                    <h2>Our Courses</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod. Quae, quod. Quae, quod.</p>
+                    <button class="btn">Explore Courses</button>
+
+                </div>
+        </section>
+
+
+        <!-- third section  -->
+
+        <!-- <section class="sec-2">
+            <div class="sec-2-content">
+                <div class="sec-2-content-left">
+                    <img src="./Images/side-pic-2.jpg" alt="side pic">
+                </div>
+                <div class="sec-2-content-right">
+                    <h2>Why Choose Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
+                    </p>  
+                    <button class="btn">Explore Courses</button>
+                </div>
+            </div>
+        </section> -->
+
+
+    </main>
+</body>
+
+</html>
