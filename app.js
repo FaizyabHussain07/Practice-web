@@ -1,14 +1,18 @@
-// Open Modal
+// Open Modal login and sign up btn in home page 
 function openModal(id) {
     document.getElementById(id).style.display = 'flex';
 }
 
-// Close Modal
+// ended
+
+// Close Modal login and sign up btn in home page with the help of X sign 
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
 }
 
-// Toggle Password Visibility
+// ended
+
+// Toggle Password Visibility password ki eye show and hide 
 function togglePassword(id) {
     const input = document.getElementById(id);
     const icon = input.nextElementSibling;
@@ -22,3 +26,32 @@ function togglePassword(id) {
         icon.classList.remove('fa-eye-slash');
     }
 }
+
+// ended
+
+// search bar function in courses page
+
+const searchBar = document.getElementById("searchBar");
+const courseCards = document.querySelectorAll(".course-card");
+const searchForm = document.querySelector("form.search-bar-cont");
+
+
+searchForm.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent page reload on form submission
+  filterCourses();
+});
+
+function filterCourses() {
+  const searchText = searchBar.value.toLowerCase();
+
+  courseCards.forEach(card => {
+    const courseName = card.getAttribute("data-name").toLowerCase();
+    if (courseName.includes(searchText)) {
+      card.style.display = "block"; // Show matching card
+    } else {
+      card.style.display = "none"; // Hide non-matching card
+    }
+  });
+} 
+
+// ended   

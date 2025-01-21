@@ -1,0 +1,66 @@
+
+
+form.search-bar-cont {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  background: #f1f1f1;
+  overflow: hidden;
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-left: 150px;
+  margin-right: 0px;
+}
+
+form .search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0px 15px;
+}
+
+form .search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+form.search-bar-cont button {
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  height: 46px;
+  border-radius:0px 40px 40px 0px;
+  margin-right: 0px;
+  border: none;
+  width: 10%;
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+form.search-bar-cont button:hover {
+  background: #0b7dda;
+}
+
+.search-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #000;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none; /* Initially hide all cards */
+}

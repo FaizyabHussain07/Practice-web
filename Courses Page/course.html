@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses | Course-Web</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+            <img src="../Images/logo-dumy.webp" alt="logo">
+        </div>
+        <div class="nav-link">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Page/about.html">About</a></li>
+                    <li><a href="Courses Page/course.html">Courses</a></li>
+                    <li><a href="Contact Page/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
+<!-- search bar in courses -->
+<form class="search-bar-cont" >
+  <div class="search-bar">
+    <i class="fa fa-search search-icon"></i>
+    <input type="text" id="searchBar" placeholder="Search.." name="search">
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+<div id="coursesContainer">
+  <div class="course-card" data-name="HTML Basics">
+    <h3>HTML Basics</h3>
+    <p>Learn the basics of HTML.</p>
+  </div>
+  <div class="course-card" data-name="CSS Advanced">
+    <h3>CSS Advanced</h3>
+    <p>Master advanced CSS techniques.</p>
+  </div>
+  <div class="course-card" data-name="JavaScript Essentials">
+    <h3>JavaScript Essentials</h3>
+    <p>Understand JavaScript from scratch.</p>
+  </div>
+</div>
+
+<script src="../app.js"></script>
+
 </body>
 </html>
