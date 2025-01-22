@@ -153,21 +153,77 @@
   <button type="submit">Search</button>
 </form>
 
+<div ><span class="line"></span></div>
 
-<div id="coursesContainer">
-  <div class="course-card" data-name="HTML Basics">
-    <h3>HTML Basics</h3>
-    <p>Learn the basics of HTML.</p>
-  </div>
-  <div class="course-card" data-name="CSS Advanced">
-    <h3>CSS Advanced</h3>
-    <p>Master advanced CSS techniques.</p>
-  </div>
-  <div class="course-card" data-name="JavaScript Essentials">
-    <h3>JavaScript Essentials</h3>
-    <p>Understand JavaScript from scratch.</p>
-  </div>
+<div class="courses-container">
+    <div class="courses-category">
+        <h4>Category Filtered By</h4>
+
+        <div class="filter-group">
+            <label>Courses</label>
+            <div><input type="radio" name="course" value="web"> Web Development</div>
+            <div><input type="radio" name="course" value="design"> Design</div>
+            <div><input type="radio" name="course" value="marketing"> Marketing</div>
+            <div><input type="radio" name="course" value="business"> Business</div>
+            <a href="#">Show More</a>
+        </div>
+
+        <div class="filter-group">
+            <label>Level</label>
+            <div><input type="radio" name="level" value="beginner"> Beginner</div>
+            <div><input type="radio" name="level" value="intermediate"> Intermediate</div>
+            <div><input type="radio" name="level" value="advanced"> Advanced</div>
+            <a href="#">Show More</a>
+        </div>
+
+        <div class="filter-group">
+            <label>Duration</label>
+            <div><input type="radio" name="duration" value="1-3"> 1-3 Months</div>
+            <div><input type="radio" name="duration" value="4-6"> 4-6 Months</div>
+            <div><input type="radio" name="duration" value="6+"> 6+ Months</div>
+            <a href="#">Show More</a>
+        </div>
+    </div>
+
+    <div class="courses-card-container" id="coursesContainer">
+        <!-- Course cards will go here -->
+        <div class="course-card" data-name="HTML Basics">
+            <div class="card">
+                <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>web</h1>
+                <p>detail : - Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p>Duration : - 1- 3 month</p>
+                <p class="price">$19.99</p>
+                <p><button>Enroll now</button></p>
+              </div>
+          </div>
+          <div class="course-card" data-name="CSS Advanced">
+            <div class="card">
+                <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>web</h1>
+                <p>detail : - Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p>Duration : - 1- 3 month</p>
+                <p class="price">$19.99</p>
+                <p><button>Enroll now</button></p>
+              </div>
+          </div>
+          <div class="course-card" data-name="JavaScript Essentials">
+            <div class="card">
+                <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>web</h1>
+                <p>detail : - Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p>Duration : - 1- 3 month</p>
+                <p class="price">$19.99</p>
+                <p><button>Enroll now</button></p>
+              </div>
+          </div>
+    </div>
 </div>
+
+<!-- 
+<div id="coursesContainer">
+ 
+</div> -->
 
 <script src="app.js"></script>
 
