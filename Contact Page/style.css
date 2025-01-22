@@ -68,12 +68,13 @@ input[type=tel]{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-left: 400px;
 }
 .submit img{
   width: 20px;
   height: 20px;
 }
-.submit {
+form .submit {
   background-color:#0f343c;
   color: white;
   padding: 12px 20px;
@@ -81,7 +82,6 @@ input[type=tel]{
   font-size: 17px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 400px;
 }
 
 .submit:hover {
@@ -92,7 +92,9 @@ input[type=tel]{
   border-radius: 5px;
   background-color: #808080;
   padding: 20px;
-  width: 30%;
+  width: 45%;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .container h3{
     text-align: center;
