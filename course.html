@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course-Web</title>
+    <title>Courses | Course-Web</title>
+    <link rel="stylesheet" href="./Courses Page/style.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-
-<script src="app.js">
-
-</script>
-
 <body>
 
     <header>
@@ -35,7 +32,8 @@
             <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
         </div>
     </header>
-
+    </header>
+    
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/Home Page/home-log.html" method="post">
             <div class="imgcontainer">
@@ -146,61 +144,32 @@
         </form>
     </div>
 
-    <main>
-        <!-- First section -->
-        <section class="sec-1">
-            <div class="sec-1-content">
-                <h2>Welcome to Our Web Development Courses</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, similique ratione. Amet cupiditate,
-                    praesentium quod quas, iure, aliquam minus aspernatur ipsum vero doloremque nihil aliquid animi
-                    porro atque qui autem aperiam! Tenetur totam quod illo tempora necessitatibus dolor excepturi,
-                    quidem optio, quam veniam minima placeat veritatis, natus repellendus! Deleniti, sit?</p>
-                <button class="btn">Explore Courses</button>
-            </div>
-            <div class="sec-1-image">
-                <img src="./Images/side-pic-1.jpg" alt="hero image">
-            </div>
-        </section>
-
-        <!-- second section  -->
-        <section class="sec-2">
-            <div class="sec-2-content">
-                <div class="sec-2-content-left">
-                    <img src="./Images/side-pic-3.jpg" alt="side pic">
-                </div>
-                <div class="sec-2-content-right">
-                    <h2>Our Courses</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod. Quae, quod. Quae, quod.</p>
-                    <button class="btn">Explore Courses</button>
-
-                </div>
-        </section>
+<!-- search bar in courses -->
+<form class="search-bar-cont" >
+  <div class="search-bar">
+    <i class="fa fa-search search-icon"></i>
+    <input type="text" id="searchBar" placeholder="Search.." name="search">
+  </div>
+  <button type="submit">Search</button>
+</form>
 
 
-        <!-- third section  -->
+<div id="coursesContainer">
+  <div class="course-card" data-name="HTML Basics">
+    <h3>HTML Basics</h3>
+    <p>Learn the basics of HTML.</p>
+  </div>
+  <div class="course-card" data-name="CSS Advanced">
+    <h3>CSS Advanced</h3>
+    <p>Master advanced CSS techniques.</p>
+  </div>
+  <div class="course-card" data-name="JavaScript Essentials">
+    <h3>JavaScript Essentials</h3>
+    <p>Understand JavaScript from scratch.</p>
+  </div>
+</div>
 
-        <!-- <section class="sec-2">
-            <div class="sec-2-content">
-                <div class="sec-2-content-left">
-                    <img src="./Images/side-pic-2.jpg" alt="side pic">
-                </div>
-                <div class="sec-2-content-right">
-                    <h2>Why Choose Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                        Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod. Quae, quod.
-                    </p>  
-                    <button class="btn">Explore Courses</button>
-                </div>
-            </div>
-        </section> -->
+<script src="app.js"></script>
 
-
-    </main>
 </body>
-
 </html>
